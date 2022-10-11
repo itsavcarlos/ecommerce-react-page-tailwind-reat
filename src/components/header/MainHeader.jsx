@@ -25,10 +25,7 @@ const MainHeader = () => {
 
   return (
     <>
-      <header
-        className="bg-write container mx-auto 
-                            flex items-center gap-8 px-4 py-8"
-      >
+      <header className="container mx-auto flex items-center gap-8 py-4 px-8 md:p-0">
         <button className="md:hidden" onClick={handleOpenMenu}>
           <MenuIcon />
         </button>
@@ -41,21 +38,11 @@ const MainHeader = () => {
           <button className="mb-12 md:hidden" onClick={handleCloseMenu}>
             <CloseIcon />
           </button>
-          <a href="#" className="" id="">
-            Collections
-          </a>
-          <a href="#" className="" id="">
-            Man
-          </a>
-          <a href="#" className="" id="">
-            Women
-          </a>
-          <a href="#" className="" id="">
-            About
-          </a>
-          <a href="#" className="" id="">
-            Contact
-          </a>
+          <NavLinkHeader text="Collection" />
+          <NavLinkHeader text="Man" />
+          <NavLinkHeader text="Women" />
+          <NavLinkHeader text="About" />
+          <NavLinkHeader text="Contact" />
         </nav>
         <div className="flex gap-4">
           <button>
